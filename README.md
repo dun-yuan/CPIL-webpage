@@ -54,12 +54,31 @@ Decap CMS is configured in `public/admin/config.yml`.
 
 Before launch:
 
-1. Replace `OWNER/REPO` in the CMS backend config.
-2. Replace `site_url`, `display_url`, and placeholder contact details.
+1. Confirm the CMS backend points to `dun-yuan/CPIL-webpage`.
+2. Replace placeholder contact details.
 3. Configure GitHub OAuth for Decap CMS. Netlify can provide this auth flow; GitHub Pages or Cloudflare Pages may need a separate OAuth proxy.
 4. Keep `publish_mode: editorial_workflow` enabled.
 
 The CMS stores uploads under `public/images/uploads` and writes content changes to Markdown files in `src/content`.
+
+### Cloudflare Pages CMS Login
+
+This repo includes Cloudflare Pages Functions for Decap CMS GitHub OAuth:
+
+- `functions/api/auth.js`
+- `functions/api/callback.js`
+
+Create a GitHub OAuth App:
+
+- Homepage URL: `https://cpil-webpage.pages.dev`
+- Authorization callback URL: `https://cpil-webpage.pages.dev/api/callback`
+
+Then add these Cloudflare Pages environment variables:
+
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+
+If the repo is private, CMS users need GitHub access to `dun-yuan/CPIL-webpage`.
 
 ## Recommended Branch Protection
 
