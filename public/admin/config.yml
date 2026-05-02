@@ -1,7 +1,7 @@
-# Decap CMS writes content changes to GitHub. Replace OWNER/REPO before launch.
+# Decap CMS writes content changes to GitHub.
 backend:
   name: github
-  repo: OWNER/REPO
+  repo: mcgill-cpslab/CPIL-webpage
   branch: main
   squash_merges: true
 
