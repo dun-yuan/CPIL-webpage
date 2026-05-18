@@ -26,7 +26,7 @@ const {
   primaryCta,
   secondaryCta,
   ctas,
-  image = '/images/brand/cpil-hero.png',
+  image = '/images/brand/cpil-hero-banner.png',
 } = Astro.props;
 
 const links = ctas ?? [primaryCta, secondaryCta].filter((link): link is Link => Boolean(link));
@@ -75,8 +75,8 @@ const links = ctas ?? [primaryCta, secondaryCta].filter((link): link is Link => 
     <figure class="grid gap-4">
       <img
         src={withBase(image)}
-        alt="Abstract visualization of sensing, networks, and intelligent infrastructure"
-        class="aspect-[4/3] w-full rounded-md border border-[rgba(var(--line),0.86)] object-cover"
+        alt="Cyber-Physical Intelligence Lab banner with MBZUAI, McGill, Mila, and cyber-physical AI imagery"
+        class="aspect-[16/9] w-full rounded-md border border-[rgba(var(--line),0.86)] object-cover"
         loading="eager"
         decoding="async"
       />

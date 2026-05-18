@@ -23,7 +23,7 @@ public_folder: "/images/uploads"
 
 site_url: "https://cpil-lab.github.io"
 display_url: "https://cpil-lab.github.io"
-logo_url: "/images/brand/cpil-admin-logo.png"
+logo_url: "/images/brand/cpil-lab-concept.png"
 
 collections:
   - name: "people"
