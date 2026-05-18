@@ -13,9 +13,13 @@ const isActive = (href: string) =>
 <header class="sticky top-0 z-40 border-b border-[rgba(var(--line),0.86)] bg-[rgba(var(--surface),0.88)] backdrop-blur-xl">
   <nav class="section-shell flex h-16 items-center justify-between gap-4" aria-label="Primary navigation">
     <a href={withBase('/')} class="flex items-center gap-3 no-underline" aria-label={`${siteInfo.shortName} home`}>
-      <span class="grid size-10 place-items-center rounded-md bg-[rgb(var(--ink))] text-sm font-bold text-[rgb(var(--surface))]">
-        {siteInfo.shortName}
-      </span>
+      <img
+        src={withBase('/images/brand/cpil-lab-concept.png')}
+        alt=""
+        class="size-10 rounded-md border border-[rgba(var(--line),0.86)] bg-white object-cover"
+        loading="eager"
+        decoding="async"
+      />
       <span class="hidden leading-tight sm:block">
         <span class="block text-sm font-bold text-[rgb(var(--ink))]">{siteInfo.name}</span>
         <span class="block text-xs text-[rgb(var(--muted))]">Trustworthy, efficient, and agentic AI</span>
